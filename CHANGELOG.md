@@ -8,6 +8,8 @@ All notable changes to this project will be documented in this file. If a contri
 
 ### Added
 
+- Added `withTheme` higher order component; thanks [@brunolemos](https://twitter.com/brunolemos). (see [#312] (https://github.com/styled-components/styled-components/pull/312))
+
 ### Changed
 
 ## [v1.1.3]

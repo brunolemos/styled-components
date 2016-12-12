@@ -401,6 +401,25 @@ Button.defaultProps = {
 };
 ```
 
+#### Getting the theme outside styled components
+
+If you ever need to get the current `theme` outside styled components (e.g. inside render functions), you can use the `withTheme` Higher Order Component:
+
+```JS
+import { withTheme } from 'styled-components'
+
+class Component extends React.Component {
+  render() {
+    const { theme } = this.props
+
+    console.log('Current theme: ', theme);
+    // ...
+  }
+}
+
+export default withTheme(Component)
+```
+
 ## Docs
 
 See [the documentation](./docs) for more information about using `styled-components`.
